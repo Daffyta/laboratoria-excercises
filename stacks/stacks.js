@@ -1,45 +1,44 @@
 var nombres = [];
 
-var nombre = new Stack();
-var apellido = new Stack();
-
 function Stack() {
-  var stack = [];
-  this.push = function(element){
-    stack.push(element);
+  var nombreP = [];
+  this.push = function(valor){
+    nombreP.push(valor);
   };
 
   this.pop = function(){
-    return stack.pop();
+    return nombreP.pop();
   };
-
-  this.peek = function(){
-    return stack[stack.length-1];
-  };
-
-  this.isEmpty = function(){
-    return stack.length == 0;
-  };
-
-  this.size = function(){
-    return stack.length;
-  };
-
-  this.clear = function(){
-    stack = [];
-  };
-
-  this.print = function(){
-    console.log(stack.toString());
-  };
+  //
+  // this.peek = function(){
+  //   return nombresP[nombresP.length-1];
+  // };
+  //
+  // this.isEmpty = function(){
+  //   return nombresP.length == 0;
+  // };
+  //
+  // this.size = function(){
+  //   return nombresP.length;
+  // };
+  //
+  // this.clear = function(){
+  //   nombresP = [];
+  // };
+  //
+  // this.print = function(){
+  //   console.log(nombresP.toString());
+  // };
 }
 
+var nombre = new Stack();
 nombre.push("Lorensa");
 nombre.push("Coco");
 nombre.push("Pile");
 nombre.push("Paco");
 nombre.push("Toño");
 
+var apellido = new Stack();
 apellido.push("Díaz");
 apellido.push("Gutierrez");
 apellido.push("Nolasco");
